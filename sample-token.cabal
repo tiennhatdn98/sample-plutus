@@ -1,10 +1,10 @@
 Cabal-Version:      2.4
-Name:               plutus-pioneer-program-week06
+Name:               sample-token
 Version:            0.1.0.0
-Author:              Lars Bruenjes
-Maintainer:          brunjlar@gmail.com
+Author:              
+Maintainer:          
 Build-Type:          Simple
-Copyright:           © 2021 Lars Bruenjes
+Copyright:           © 2021 
 License:             Apache-2.0
 License-files:       LICENSE
 
@@ -56,7 +56,7 @@ executable token-pab
                      , plutus-ledger
                      , plutus-ledger-constraints
                      , plutus-pab
-                     , plutus-pioneer-program-week06
+                     , sample-token
                      , plutus-use-cases
                      , text
 
@@ -67,7 +67,7 @@ executable mint-token
   build-depends:       base ^>= 4.14.1.0
                      , plutus-contract
                      , plutus-pab
-                     , plutus-pioneer-program-week06
+                     , sample-token
                      , req ^>= 3.9.0
 
 executable monitor
@@ -79,7 +79,7 @@ executable monitor
                      , plutus-contract
                      , plutus-ledger-api
                      , plutus-pab
-                     , plutus-pioneer-program-week06
+                     , sample-token
                      , req ^>= 3.9.0
                      , text
 
@@ -88,25 +88,25 @@ executable payment-key-hash
   hs-source-dirs:      app
   ghc-options:         -Wall
   build-depends:       base ^>= 4.14.1.0
-                     , plutus-pioneer-program-week06
+                     , sample-token
 
 executable stake-key-hash
   main-is: stake-key-hash.hs
   hs-source-dirs:      app
   ghc-options:         -Wall
   build-depends:       base ^>= 4.14.1.0
-                     , plutus-pioneer-program-week06
+                     , sample-token
 
 executable token-policy
   main-is: token-policy.hs
   hs-source-dirs:      app
   ghc-options:         -Wall
   build-depends:       base ^>= 4.14.1.0
-                     , plutus-pioneer-program-week06
+                     , sample-token
 
 executable token-name
   main-is: token-name.hs
   hs-source-dirs:      app
   ghc-options:         -Wall
   build-depends:       base ^>= 4.14.1.0
-                     , plutus-pioneer-program-week06
+                     , sample-token
