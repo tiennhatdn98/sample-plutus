@@ -10,12 +10,12 @@ License-files:       LICENSE
 
 library
   hs-source-dirs:      src
-  exposed-modules:     Week06.Monitor
-                       Week06.PAB
-                       Week06.Token.OffChain
-                       Week06.Token.OnChain
-                       Week06.Trace
-                       Week06.Utils
+  exposed-modules:     Monitor
+                       PAB
+                       Token.OffChain
+                       Token.OnChain
+                       Trace
+                       Utils
   build-depends:       aeson
                      , base ^>=4.14.1.0
                      , bytestring

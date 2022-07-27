@@ -5,7 +5,7 @@
 {-# LANGUAGE TypeApplications    #-}
 {-# LANGUAGE TypeFamilies        #-}
 
-module Week06.Monitor
+module Monitor
     ( monitor
     ) where
 

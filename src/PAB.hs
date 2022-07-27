@@ -3,7 +3,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE TypeApplications  #-}
 
-module Week06.PAB
+module PAB
     ( Address
     , TokenContracts (..)
     ) where
@@ -16,8 +16,8 @@ import           Plutus.PAB.Effects.Contract.Builtin (Empty, HasDefinitions (..)
 import           Prettyprinter                       (Pretty (..), viaShow)
 import           Wallet.Emulator.Wallet              (knownWallet, mockWalletAddress)
 
-import qualified Week06.Monitor                      as Monitor
-import qualified Week06.Token.OffChain               as Token
+import qualified Monitor                      as Monitor
+import qualified Token.OffChain               as Token
 
 data TokenContracts = Mint Token.TokenParams | Monitor Address
     deriving (Eq, Ord, Show, Generic, FromJSON, ToJSON, ToSchema)
